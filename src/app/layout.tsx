@@ -7,8 +7,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Ecommerce Nextjs App Router',
-  description: 'Project example ecommerce with nextjs',
+  title: {
+    template: '%s | devstore',
+    default: 'devstore',
+  },
 }
 
 export default function RootLayout({
