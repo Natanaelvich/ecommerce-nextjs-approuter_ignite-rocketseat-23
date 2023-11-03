@@ -13,11 +13,14 @@ This is a simple e-commerce app router built with Nextjs 13 and TypeScript.
 
 ## How to run
 
+```bash
+yarn dev
+```
+
 ### Prerequisites
 
-### Running the project
-
-### Running the tests
+- [Node LTS](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 
 ## License
 
