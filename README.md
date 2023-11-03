@@ -1,4 +1,4 @@
-# E-commerce Nextjs 13 app router
+# E-commerce Nextjs 13 App Router
 
 ## About
 
@@ -11,16 +11,22 @@ This is a simple e-commerce app router built with Nextjs 13 and TypeScript.
 - Nextjs 13
 - TypeScript
 
-## How to run
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- You have installed the latest version of [Node LTS](https://nodejs.org/en/)
+- You have a Windows/Linux/Mac machine.
+- You have read the [contributing guidelines](CONTRIBUTING.md).
+
+## Installing E-commerce Nextjs 13 App Router
+
+To install E-commerce Nextjs 13 App Router, follow these steps:
 
 ```bash
-yarn dev
-```
-
-### Prerequisites
-
-- [Node LTS](https://nodejs.org/en/)
-- [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+git clone <repository>
+cd <repository>
+yarn install
 
 ## License
 
