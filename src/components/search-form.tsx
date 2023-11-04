@@ -2,13 +2,25 @@
 
 import { Search } from 'lucide-react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { FormEvent } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 
 export function SearchForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
 
-  const query = searchParams.get('q')
+  const [query, setQuery] = useState<string>(searchParams.get('q') ?? '')
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      if (!query) {
+        return null
+      }
+
+      router.push(`/search?q=${query}`)
+    }, 1000)
+
+    return () => clearTimeout(timeoutId)
+  }, [query, router])
 
   function handleSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -18,11 +30,7 @@ export function SearchForm() {
 
     const query = data.q
 
-    if (!query) {
-      return null
-    }
-
-    router.push(`/search?q=${query}`)
+    setQuery(query as string)
   }
 
   return (
@@ -38,7 +46,8 @@ export function SearchForm() {
       <input
         id="search-input"
         name="q"
-        defaultValue={query ?? ''}
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
         placeholder="Buscar produtos..."
         className="flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-500"
         required
