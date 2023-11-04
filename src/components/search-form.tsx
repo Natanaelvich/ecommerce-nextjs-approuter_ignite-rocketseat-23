@@ -28,11 +28,15 @@ export function SearchForm() {
   return (
     <form
       onSubmit={handleSearch}
-      className="flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-zinc-700"
+      className="flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:ring-2 hover:ring-blue-500"
     >
       <Search className="w-5 h-5 text-zinc-500" />
 
+      <label htmlFor="search-input" className="sr-only">
+        Buscar produtos
+      </label>
       <input
+        id="search-input"
         name="q"
         defaultValue={query ?? ''}
         placeholder="Buscar produtos..."
