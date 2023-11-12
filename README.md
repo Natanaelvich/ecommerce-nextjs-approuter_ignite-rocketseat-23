@@ -19,6 +19,10 @@ Before you begin, ensure you have met the following requirements:
 - You have a Windows/Linux/Mac machine.
 - You have read the [contributing guidelines](CONTRIBUTING.md).
 
+## Tests
+
+![image](https://github.com/Natanaelvich/ecommerce-nextjs-approuter_ignite-rocketseat-23/assets/52014318/02d53743-19eb-486b-99c8-116b924b1ec6)
+
 ## Installing E-commerce Nextjs 13 App Router
 
 To install E-commerce Nextjs 13 App Router, follow these steps:
