@@ -21,6 +21,10 @@ Before you begin, ensure you have met the following requirements:
 
 ## Tests
 
+```bash
+yarn cypress run --e2e
+```
+
 ![image](https://github.com/Natanaelvich/ecommerce-nextjs-approuter_ignite-rocketseat-23/assets/52014318/02d53743-19eb-486b-99c8-116b924b1ec6)
 
 ## Installing E-commerce Nextjs 13 App Router
